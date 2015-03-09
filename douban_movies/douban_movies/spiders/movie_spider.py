@@ -11,8 +11,7 @@ class MovieSpider(CrawlSpider):
     allowed_domains = ['movie.douban.com']
 
     url_head = 'http://movie.douban.com/tag/'
-    # year_iterator = xrange(1900, 2020)
-    year_iterator = xrange(1900, 1901)
+    year_iterator = xrange(1900, 2020)
     start_urls = [url_head + str(year) for year in year_iterator]
 
     rules = (

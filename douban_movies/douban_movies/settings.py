@@ -12,12 +12,13 @@ BOT_NAME = 'douban_movies'
 
 SPIDER_MODULES = ['douban_movies.spiders']
 NEWSPIDER_MODULE = 'douban_movies.spiders'
+ITEM_PIPELINES = {
+    'douban_movies.pipelines.DoubanMoviesPipeline': 100,
+}
 
 LOG_LEVEL = 'DEBUG'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'douban_movies (+http://www.yourdomain.com)'
-
 DOWNLOAD_DELAY = 2
 RANDOMIZE_DOWNLOAD_DELAY = True
 COOKIES_ENABLED = True
