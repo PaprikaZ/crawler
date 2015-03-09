@@ -78,8 +78,6 @@ class DoubanMoviesPipeline(object):
     extract_writing = staticmethod(clean_invalid_field)
     extract_cast = staticmethod(clean_invalid_field)
     extract_classification = staticmethod(clean_invalid_field)
-    extract_country = staticmethod(clean_invalid_field)
-    extract_language = staticmethod(clean_invalid_field)
 
     @staticmethod
     @passby_empty_field
@@ -102,10 +100,35 @@ class DoubanMoviesPipeline(object):
     @staticmethod
     @passby_empty_field
     def extract_alternative_name(alternative_name):
-        delimiter = '/'
-        non_empty_regex = r'^\S+$'
-        return filter(lambda x: match(non_empty_regex, x),
-                      map(strip, alternative_name[0].split(delimiter)))
+        if clean_invalid_field(alternative_name):
+            delimiter = '/'
+            non_empty_regex = r'^\S+$'
+            return filter(lambda x: match(non_empty_regex, x),
+                          map(strip, alternative_name[0].split(delimiter)))
+        else:
+            return []
+
+    @staticmethod
+    @passby_empty_field
+    def extract_country(country):
+        if clean_invalid_field(country):
+            delimiter = '/'
+            non_empty_regex = r'^\S+$'
+            return filter(lambda x: match(non_empty_regex, x),
+                          map(strip, country[0].split(delimiter)) )
+        else:
+            return []
+
+    @staticmethod
+    @passby_empty_field
+    def extract_language(language):
+        if clean_invalid_field(language):
+            delimiter = '/'
+            non_empty_regex = r'^\S+$'
+            return filter(lambda x: match(non_empty_regex, x),
+                          map(strip, language[0].split(delimiter)))
+        else:
+            return []
 
     @staticmethod
     @passby_empty_field
