@@ -1,5 +1,6 @@
 __author__ = 'zhujie'
 
+from re import search
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
 from douban_movies.items import DoubanMoviesItem
@@ -33,9 +34,10 @@ class MovieSpider(CrawlSpider):
         imdb_id_xpath = './/*[@id="info"]/a/text()'
         review_score_xpath = './/*[@id="interest_sectl"]/div/p[1]/strong/text()'
         review_count_xpath = './/*[@id="interest_sectl"]/div/p[2]/a/span/text()'
-        preface_xpath = './/*[@id="link-report"]/span/text()'
+        introduction_xpath = './/*[@id="link-report"]/span/text()'
 
         item = DoubanMoviesItem()
+        item['douban_id'] = search(r'(\d+)/$', response.url).group(1)
         item['title'] = response.xpath(title_xpath).extract()
         item['director'] = response.xpath(director_xpath).extract()
         item['writing'] = response.xpath(writing_xpath).extract()
@@ -49,5 +51,5 @@ class MovieSpider(CrawlSpider):
         item['imdb_id'] = response.xpath(imdb_id_xpath).extract()
         item['review_score'] = response.xpath(review_score_xpath).extract()
         item['review_count'] = response.xpath(review_count_xpath).extract()
-        item['preface'] = response.xpath(preface_xpath).extract()
+        item['introduction'] = response.xpath(introduction_xpath).extract()
         yield item

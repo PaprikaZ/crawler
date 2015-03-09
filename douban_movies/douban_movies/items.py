@@ -7,7 +7,9 @@
 
 from scrapy import Item, Field
 
+
 class DoubanMoviesItem(Item):
+    douban_id = Field()
     title = Field()
     director = Field()
     writing = Field()
@@ -21,4 +23,4 @@ class DoubanMoviesItem(Item):
     imdb_id = Field()
     review_score = Field()
     review_count = Field()
-    preface = Field()
+    introduction = Field()
