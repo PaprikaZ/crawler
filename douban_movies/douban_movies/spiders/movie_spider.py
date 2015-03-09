@@ -4,16 +4,15 @@ from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
 from douban_movies.items import DoubanMoviesItem
 
+
 class MovieSpider(CrawlSpider):
     name = 'douban_movies'
     allowed_domains = ['movie.douban.com']
 
     url_head = 'http://movie.douban.com/tag/'
-    page_suffix_iterator = ['?start=' + str(20 * i) for i in xrange(100)]
-    year_iterator = xrange(1900, 2020)
-    start_urls = [url_head + str(year) + suffix
-                  for year in year_iterator
-                  for suffix in page_suffix_iterator]
+    # year_iterator = xrange(1900, 2020)
+    year_iterator = xrange(1900, 1901)
+    start_urls = [url_head + str(year) for year in year_iterator]
 
     rules = (
         Rule(LinkExtractor(allow=('tag/\d{4}\?start=\d{1,4}&type=T$', ))),
