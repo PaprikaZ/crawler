@@ -5,10 +5,22 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
 
-class DoubanMoviesItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class DoubanMoviesItem(Item):
+    douban_id = Field()
+    title = Field()
+    director = Field()
+    writing = Field()
+    cast = Field()
+    classification = Field()
+    country = Field()
+    language = Field()
+    release_date = Field()
+    length = Field()
+    alternative_name = Field()
+    imdb_id = Field()
+    review_score = Field()
+    review_count = Field()
+    introduction = Field()

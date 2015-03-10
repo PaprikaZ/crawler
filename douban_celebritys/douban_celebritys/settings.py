@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for douban_movies project
+# Scrapy settings for douban_celebritys project
 #
 # For simplicity, this file contains only the most important settings by
 # default. All the other settings are documented here:
@@ -8,13 +8,13 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 
-BOT_NAME = 'douban_movies'
+BOT_NAME = 'douban_celebritys'
 
-SPIDER_MODULES = ['douban_movies.spiders']
-NEWSPIDER_MODULE = 'douban_movies.spiders'
+SPIDER_MODULES = ['douban_celebritys.spiders']
+NEWSPIDER_MODULE = 'douban_celebritys.spiders'
 ITEM_PIPELINES = {
-    'douban_movies.pipelines.DoubanMoviesPipeline': 100,
-}
+    'douban_celebritys.pipelines.DoubanCelebritysPipeline': 100,
+    }
 
 LOG_LEVEL = 'DEBUG'
 
