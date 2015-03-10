@@ -1,0 +1,43 @@
+{
+  "domain": "http://www.pm25.in",
+  "queryPath": "api/querys",
+
+  "cityPm25Json": "pm2_5.json",
+  "cityPm10Json": "pm10.json",
+  "cityCoJson": "co.json",
+  "cityNo2Json": "no2.json",
+  "citySo2Json": "so2.json",
+  "cityO3Json": "o3.json",
+  "cityAqiDetailJson": "aqi_details.json",
+  "cityAqiJson": "only_aqi.json",
+  "cityStationNameJson": "station_names.json",
+  "cityNameJson": "querys.json",
+  "cityAllDetailJson": "all_cities.json",
+  "cityAqiRandingJson": "aqi_ranking.json",
+  "stationAqiJson": "aqis_by_station.json",
+
+  "token": "<your-app-token>",
+
+  "pollInterval": 3600,
+  "retryDelay": 300,
+  "requestTimeout": 10,
+
+  "logPath": "log",
+  "logFile": "aqi.log",
+  "logLevel": "info",
+
+  "mongoUrl": "mongodb://localhost:27017/<your-db-name>",
+  "mongoConnectionOptions": {
+    "server": {
+      "pollSize": 2,
+      "socketOptions": { "keepAlive": 1 }
+    }
+  },
+  "mongoSchemaOptions": {
+    "id": true,
+    "safe": true,
+    "strict": "throw",
+    "autoIndex": false,
+    "bufferCommands": true
+  }
+}
