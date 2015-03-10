@@ -4,7 +4,7 @@ Personal Crawlers
 Applications
 ------------
 
-* Douban movie subjects, under movie.douban.com/subject/<id>
-* Douban movie celebritys, under movie.douban.com/celebrity/<id>
-* China official aqi indexs, from pm25.in api
-* Global weather data, from 7timer! api
+* Douban movie subjects, source from [movie.douban.com](http://movie.douban.com)
+* Douban movie celebritys, source from [movie.douban.com](http://movie.douban.com)
+* China official AQI, from [pm25.in](http://pm25.in) API
+* China weather data, from [7timer!](http://ftp.astron.ac.cn/index.php?lang=en) API
