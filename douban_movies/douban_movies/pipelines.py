@@ -55,7 +55,7 @@ class DoubanMoviesPipeline(object):
             'review_count': self.extract_review_count(item['review_count']),
             'introduction': self.extract_introduction(item['introduction'])
         })
-        log.msg('douban movie id %s' % item['douban_id'])
+        log.msg('douban movie subject id %s crawled' % item['douban_id'])
         return item
 
     @staticmethod
