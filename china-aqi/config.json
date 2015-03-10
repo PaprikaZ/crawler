@@ -18,7 +18,7 @@
 
   "token": "<your-app-token>",
 
-  "pollInterval": 3600,
+  "pollInterval": 1800,
   "retryDelay": 300,
   "requestTimeout": 10,
 
