@@ -4,8 +4,8 @@ fs = require('fs')
 
 appRoot = path.join(__dirname, '../')
 
-appconfigFilePath = path.join(appRoot, 'config.json')
-config = JSON.parse(fs.readFileSync(appconfigFilePath, 'utf8'))
+appConfigFilePath = path.join(appRoot, 'config.json')
+config = JSON.parse(fs.readFileSync(appConfigFilePath, 'utf8'))
 
 config.logPath = path.join(appRoot, config.logPath)
 config.logFile = path.join(config.logPath, config.logFile)
