@@ -1,0 +1,37 @@
+{
+  "name": "batch-geocoding",
+  "version": "0.0.1",
+  "description": "batch calling public geocoding api",
+  "keywords": [
+    "batch",
+    "geocoding",
+    "google"
+  ],
+  "author": {
+    "name": "Zhu Jie",
+    "email": "sms.extreme@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaprikaZ/crawler.git"
+  },
+  "main": "./app.js",
+  "bugs": {
+    "url": "https://github.com/PaprikaZ/crawler/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "dependencies": {
+    "request": "2.53.0"
+  },
+  "devDependencies": {
+    "coffee-script": "1.9.0"
+  },
+  "licenses": [
+    {
+      "type": "GPL2",
+      "url": "https://github.com/PaprikaZ/crawler/raw/master/LICENSE"
+    }
+  ]
+}

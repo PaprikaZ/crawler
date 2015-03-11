@@ -1,0 +1,10 @@
+{
+  "googleMapsDomain": "http://maps.googleapis.com/",
+  "geocodingUri": "maps/api/geocode/",
+  "defaultOutput": "json",
+  "defaultSensor": "false",
+
+  "batchFilePath": "batch-geo-address",
+  "outputFilePath": "batch-result.json",
+  "requestInterval": 100
+}
