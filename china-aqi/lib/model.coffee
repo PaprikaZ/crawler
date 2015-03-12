@@ -108,7 +108,7 @@ StationRecordSchema = new mongoose.Schema({
 })
 
 (mongoose.modelNames().indexOf('StationRecord') == -1) and
-mongoose.model('StationRecord', StationRecordSchema)
+  mongoose.model('StationRecord', StationRecordSchema)
 
 module.exports = exports = {
   StationRecord: mongoose.model('StationRecord')

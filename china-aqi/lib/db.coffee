@@ -1,13 +1,13 @@
 mongoose = require('mongoose')
 config = require('./config.js')
 
-mongoErrorHanlder = (err) ->
+mongoErrorHandler = (err) ->
   logger.error('mongodb connection caught error')
   logger.error('msg: %s', err.message)
   throw err
 
 connection = mongoose.connection
-connection.on('error', mongoErrorHanlder)
+connection.on('error', mongoErrorHandler)
 connection.on('open', -> logger.info('mongodb connection established'))
 connection.on('close', -> logger.info('mongodb connection closed'))
 connection.on('reconnected', -> logger.warn('mongodb connection reconnected'))

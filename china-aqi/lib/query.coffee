@@ -1,10 +1,8 @@
-util = require('util')
 request = require('request')
 config = require('./config.js')
 StationRecord = require('./model.js').StationRecord
 
-pollTimer = null
-timers = [pollTimer]
+timers = []
 
 pollUrl = config.cityAllDetailJson + '?token=' + config.token
 
@@ -65,15 +63,16 @@ exports.startPoll = ->
       json: true
       encoding: 'utf8'
       timeout: config.requestTimeout
-    }, (err, res, ret) ->
+    }, (err, res, json) ->
       if err
         requestErrorHandler(err, retry)
       else if res.statusCode != 200
         abnormalResponseHandler(res, retry)
-      else if ret.error
-        returnErrorHandler(ret, retry)
+      else if json.error
+        returnErrorHandler(json, retry)
       else
-        writeResult(ret, pendingNextPoll)
+        writeResult(json, pendingNextPoll)
+      return
     )
     return
   retry = -> setTimeout((-> poll()), config.retryDelay)
