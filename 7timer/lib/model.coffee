@@ -1,7 +1,7 @@
 mongoose = require('mongoose')
 config = require('./config.js')
 
-PredictRecordSchema = new mongoose.Schema({
+CivilPredictionSchema = new mongoose.Schema({
   time_point: {
     type: Number
     required: true
@@ -79,7 +79,7 @@ PredictRecordSchema = new mongoose.Schema({
   }
 })
 
-LocationRecordSchema = new mongoose.Schema({
+CivilRecordSchema = new mongoose.Schema({
   query_date: {
     type: Date
     required: true
@@ -93,15 +93,49 @@ LocationRecordSchema = new mongoose.Schema({
     type: Date
     required: true
   }
-  prediction: [ PredictRecordSchema ]
+  prediction: [ CivilPredictionSchema ]
 })
 
-(mongoose.modelNames().indexOf('PredictRecord') == -1) and
-  mongoose.model('PredictRecord', PredictRecordSchema)
-(mongoose.modelNames().indexOf('LocationRecord') == -1) and
-  mongoose.model('LocationRecord', LocationRecordSchema)
+(mongoose.modelNames().indexOf('CivilPrediction') == -1) and
+  mongoose.model('CivilPrediction', CivilPredictionSchema)
+(mongoose.modelNames().indexOf('CivilRecord') == -1) and
+  mongoose.model('CivilRecord', CivilRecordSchema)
+
+CivilPrediction = mongoose.model('CivilPrediction')
+CivilRecord = mongoose.model('CivilRecord')
+
+createCivilRecord = (json) ->
+  now = new Date()
+  prediction = json.dataseries.map((prec) ->
+    new CivilPrediction({
+      time_point: prec.timepoint
+      cloud_cover: prec.cloudcover
+      lifted_index: prec.lifted_index
+      predict_type: prec.prec_type
+      predict_amount: prec.prec_amount
+      temperature_2m: prec.temp2m
+      relative_humidity_2m: prec.rh2m.slice(0, -1)
+      wind_direction_10m: prec.wind10m.direction
+      wind_speed_10m: prec.wind10m.speed
+      weather: prec.weather
+    })
+  )
+
+  new CivilRecord({
+    query_date: now.toUTCString()
+    product_type: json.product
+    report_timepoint: new Date(
+      parseInt(json.init.slice(0, 4)),
+      parseInt(json.init.slice(4, 6)),
+      parseInt(json.init.slice(6, 8)),
+      parseInt(json.init.slice(8, 10))
+    )
+    prediction: prediction
+  }).save()
+
+  logger.debug('write civil record done')
+  return
 
 module.exports = exports = {
-  PredictRecord: mongoose.model('PredictRecord')
-  LocationRecord: mongoose.model('LocationRecord')
+  createCivilRecord: createCivilRecord
 }

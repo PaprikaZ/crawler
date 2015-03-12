@@ -1,8 +1,6 @@
 request = require('request')
 config = require('./config.js')
-
-LocationRecord = require('./model.js').LocationRecord
-PredictRecord = require('./model.js').PredictRecord
+model = require('./model.js')
 
 pollTimer = null
 timers = [pollTimer]
@@ -29,42 +27,14 @@ abnormalResponseHandler = (res, cb) ->
   cb()
   return
 
-returnErrorHandler = (ret, cb) ->
+returnErrorHandler = (json, cb) ->
   logger.debug('return error handler is empty')
   cb()
   return
 
-writeRecord = (ret, cb) ->
-  logger.debug(ret)
-  now = new Date()
-  prediction = ret.dataseries.map((prec) ->
-    new PredictRecord({
-      time_point: prec.timepoint
-      cloud_cover: prec.cloudcover
-      lifted_index: prec.lifted_index
-      predict_type: prec.prec_type
-      predict_amount: prec.prec_amount
-      temperature_2m: prec.temp2m
-      relative_humidity_2m: prec.rh2m.slice(0, -1)
-      wind_direction_10m: prec.wind10m.direction
-      wind_speed_10m: prec.wind10m.speed
-      weather: prec.weather
-    })
-  )
-
-  new LocationRecord({
-    query_date: now.toUTCString()
-    product_type: ret.product
-    report_timepoint: new Date(
-      parseInt(ret.init.slice(0, 4)),
-      parseInt(ret.init.slice(4, 6)),
-      parseInt(ret.init.slice(6, 8)),
-      parseInt(ret.init.slice(8, 10))
-    )
-    prediction: prediction
-  }).save()
-
-  logger.debug('write record done')
+writeRecord = (json, cb) ->
+  logger.debug(json)
+  model.createCivilRecord(json)
   cb()
   return
 
