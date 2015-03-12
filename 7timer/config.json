@@ -1,0 +1,34 @@
+{
+  "domain": "http://ftp.astron.ac.cn/",
+  "queryUri": "v4/bin/",
+
+  "queryType": "civil.php?",
+  "queryLang": "en",
+  "queryUnit": "metric",
+  "queryOutput": "json",
+  "queryTzshift": "0",
+  "queryAltitudeCorrection": "0",
+
+  "pollInterval": 1800,
+  "retryDelay": 120,
+  "requestTimeout": 10,
+
+  "logPath": "log",
+  "logFile": "7timer.log",
+  "logLevel": "info",
+
+  "mongoUrl": "mongodb://localhost:27017/<your-db-name>",
+  "mongoConnectionOptions": {
+    "server": {
+      "pollSize": 2,
+      "socketOptions": { "keepAlive": 1 }
+    }
+  },
+  "mongoSchemaOptions": {
+    "id": true,
+    "safe": true,
+    "strict": "throw",
+    "autoIndex": false,
+    "bufferCommands": true
+  }
+}
