@@ -1,0 +1,1862 @@
+[
+{
+  "name": "Qitaihe",
+  "lat": 45.771,
+  "lon": 131.003
+},
+{
+  "name": "Sanya",
+  "lat": 18.252,
+  "lon": 109.511
+},
+{
+  "name": "Sanming",
+  "lat": 26.263,
+  "lon": 117.638
+},
+{
+  "name": "Sanmenxia",
+  "lat": 34.772,
+  "lon": 111.200
+},
+{
+  "name": "Shanghai",
+  "lat": 31.230,
+  "lon": 121.473
+},
+{
+  "name": "Shangrao",
+  "lat": 28.454,
+  "lon": 117.943
+},
+{
+  "name": "Dongguan",
+  "lat": 23.020,
+  "lon": 113.751
+},
+{
+  "name": "Dongying",
+  "lat": 37.434,
+  "lon": 118.674
+},
+{
+  "name": "Zhongwei",
+  "lat": 37.499,
+  "lon": 105.196
+},
+{
+  "name": "Zhongshan",
+  "lat": 22.516,
+  "lon": 113.392
+},
+{
+  "name": "Linxia",
+  "lat": 35.601,
+  "lon": 103.210
+},
+{
+  "name": "Lin'an",
+  "lat": 30.233,
+  "lon": 119.724
+},
+{
+  "name": "Linfen",
+  "lat": 36.088,
+  "lon": 111.518
+},
+{
+  "name": "Linyi",
+  "lat": 35.104,
+  "lon": 118.356
+},
+{
+  "name": "Lincang",
+  "lat": 23.877,
+  "lon": 100.079
+},
+{
+  "name": "Dandong",
+  "lat": 40.000,
+  "lon": 124.354
+},
+{
+  "name": "Lishui",
+  "lat": 28.467,
+  "lon": 119.922
+},
+{
+  "name": "Lijiang",
+  "lat": 26.855,
+  "lon": 100.227
+},
+{
+  "name": "Yiwu",
+  "lat": 29.306,
+  "lon": 120.075
+},
+{
+  "name": "Ulanqab",
+  "lat": 40.994,
+  "lon": 113.132
+},
+{
+  "name": "Wuhai",
+  "lat": 39.655,
+  "lon": 106.794
+},
+{
+  "name": "Wulumuqi",
+  "lat": 43.825,
+  "lon": 87.616
+},
+{
+  "name": "Leshan",
+  "lat": 29.552,
+  "lon": 103.765
+},
+{
+  "name": "Jiujiang",
+  "lat": 29.705,
+  "lon": 116.001
+},
+{
+  "name": "Rushan",
+  "lat": 36.919,
+  "lon": 121.539
+},
+{
+  "name": "Yunfu",
+  "lat": 22.915,
+  "lon": 112.044
+},
+{
+  "name": "Wujiaqu",
+  "lat": 44.166,
+  "lon": 87.543
+},
+{
+  "name": "Bozhou",
+  "lat": 33.844,
+  "lon": 115.778
+},
+{
+  "name": "Yichun",
+  "lat": 47.727,
+  "lon": 128.841
+},
+{
+  "name": "Ili",
+  "lat": 43.916,
+  "lon": 81.324
+},
+{
+  "name": "Ili Museum",
+  "lat": 43.936,
+  "lon": 81.324
+},
+{
+  "name": "Foshan",
+  "lat": 23.021,
+  "lon": 113.121
+},
+{
+  "name": "Jiamusi",
+  "lat": 46.799,
+  "lon": 130.318
+},
+{
+  "name": "Baoding",
+  "lat": 38.873,
+  "lon": 115.464
+},
+{
+  "name": "Baoshan",
+  "lat": 25.112,
+  "lon": 99.161
+},
+{
+  "name": "Xinyang",
+  "lat": 32.146,
+  "lon": 114.091
+},
+{
+  "name": "Ke Zi Le Su",
+  "lat": 43.818,
+  "lon": 82.286
+},
+{
+  "name": "Kezhou",
+  "lat": 38.441,
+  "lon": 75.049
+},
+{
+  "name": "Karamay",
+  "lat": 45.579,
+  "lon": 84.889
+},
+{
+  "name": "Lu'an",
+  "lat": 31.733,
+  "lon": 116.521
+},
+{
+  "name": "Lupanshui",
+  "lat": 26.592,
+  "lon": 104.830
+},
+{
+  "name": "Lanzhou",
+  "lat": 36.061,
+  "lon": 103.834
+},
+{
+  "name": "Hinggan",
+  "lat": 46.082,
+  "lon": 122.037
+},
+{
+  "name": "Neijiang",
+  "lat": 29.580,
+  "lon": 105.058
+},
+{
+  "name": "Liangshan",
+  "lat": 27.881,
+  "lon": 102.267
+},
+{
+  "name": "Baotou",
+  "lat": 40.657,
+  "lon": 109.840
+},
+{
+  "name": "Beijing",
+  "lat": 39.904,
+  "lon": 116.407
+},
+{
+  "name": "Beihai",
+  "lat": 21.481,
+  "lon": 109.119
+},
+{
+  "name": "Shiyan",
+  "lat": 32.629,
+  "lon": 110.797
+},
+{
+  "name": "Nanjing",
+  "lat": 32.060,
+  "lon": 118.796
+},
+{
+  "name": "Nanchong",
+  "lat": 30.837,
+  "lon": 106.110
+},
+{
+  "name": "Nanning",
+  "lat": 22.817,
+  "lon": 108.366
+},
+{
+  "name": "Nanping",
+  "lat": 26.622,
+  "lon": 118.177
+},
+{
+  "name": "Nanchang",
+  "lat": 28.682,
+  "lon": 115.858
+},
+{
+  "name": "Nantong",
+  "lat": 31.980,
+  "lon": 120.894
+},
+{
+  "name": "Nanyang",
+  "lat": 32.990,
+  "lon": 112.528
+},
+{
+  "name": "Bozhou",
+  "lat": 45.383,
+  "lon": 83.799
+},
+{
+  "name": "Jimo",
+  "lat": 36.389,
+  "lon": 120.447
+},
+{
+  "name": "Xiamen",
+  "lat": 24.479,
+  "lon": 118.089
+},
+{
+  "name": "Shuangyashan",
+  "lat": 46.646,
+  "lon": 131.159
+},
+{
+  "name": "Jurong",
+  "lat": 31.944,
+  "lon": 119.168
+},
+{
+  "name": "Taizhou",
+  "lat": 28.656,
+  "lon": 121.420
+},
+{
+  "name": "Hefei",
+  "lat": 31.820,
+  "lon": 117.227
+},
+{
+  "name": "Ji'an",
+  "lat": 27.113,
+  "lon": 114.992
+},
+{
+  "name": "Jilin",
+  "lat": 43.837,
+  "lon": 126.549
+},
+{
+  "name": "Turpan",
+  "lat": 42.951,
+  "lon": 89.189
+},
+{
+  "name": "Lvliang",
+  "lat": 37.518,
+  "lon": 111.144
+},
+{
+  "name": "Wuzhong",
+  "lat": 37.997,
+  "lon": 106.198
+},
+{
+  "name": "Wujiang",
+  "lat": 31.139,
+  "lon": 120.645
+},
+{
+  "name": "Zhoukou",
+  "lat": 33.626,
+  "lon": 114.696
+},
+{
+  "name": "Hulun Buir",
+  "lat": 49.211,
+  "lon": 119.765
+},
+{
+  "name": "Huhehaote",
+  "lat": 40.842,
+  "lon": 111.749
+},
+{
+  "name": "Hetian",
+  "lat": 37.114,
+  "lon": 79.922
+},
+{
+  "name": "Xianning",
+  "lat": 29.841,
+  "lon": 114.322
+},
+{
+  "name": "Xianyang",
+  "lat": 34.329,
+  "lon": 108.708
+},
+{
+  "name": "Hami(Kumul)",
+  "lat": 42.818,
+  "lon": 93.515
+},
+{
+  "name": "Haerbin",
+  "lat": 45.803,
+  "lon": 126.534
+},
+{
+  "name": "Tangshan",
+  "lat": 39.630,
+  "lon": 118.180
+},
+{
+  "name": "Shangqiu",
+  "lat": 34.414,
+  "lon": 115.656
+},
+{
+  "name": "Shangluo",
+  "lat": 33.870,
+  "lon": 109.940
+},
+{
+  "name": "Kashi(Kaxgar)",
+  "lat": 39.470,
+  "lon": 75.989
+},
+{
+  "name": "Jiaxing",
+  "lat": 30.753,
+  "lon": 120.758
+},
+{
+  "name": "Jiayuguan",
+  "lat": 39.773,
+  "lon": 98.289
+},
+{
+  "name": "Siping",
+  "lat": 43.166,
+  "lon": 124.350
+},
+{
+  "name": "Guyuan",
+  "lat": 36.015,
+  "lon": 106.242
+},
+{
+  "name": "Qoqek",
+  "lat": 46.745,
+  "lon": 82.980
+},
+{
+  "name": "Daxinganling",
+  "lat": 50.410,
+  "lon": 124.117
+},
+{
+  "name": "Daxinganling Zone",
+  "lat": 52.335,
+  "lon": 124.711
+},
+{
+  "name": "Datong",
+  "lat": 40.076,
+  "lon": 113.300
+},
+{
+  "name": "Daqing",
+  "lat": 46.589,
+  "lon": 125.103
+},
+{
+  "name": "Dali",
+  "lat": 25.606,
+  "lon": 100.267
+},
+{
+  "name": "Dalian",
+  "lat": 38.914,
+  "lon": 121.614
+},
+{
+  "name": "Tianshui",
+  "lat": 34.580,
+  "lon": 105.724
+},
+{
+  "name": "Tianjin",
+  "lat": 39.084,
+  "lon": 117.200
+},
+{
+  "name": "Taicang",
+  "lat": 31.457,
+  "lon": 121.130
+},
+{
+  "name": "Taiyuan",
+  "lat": 37.870,
+  "lon": 112.548
+},
+{
+  "name": "Weihai",
+  "lat": 37.513,
+  "lon": 122.120
+},
+{
+  "name": "Loudi",
+  "lat": 27.700,
+  "lon": 111.993
+},
+{
+  "name": "Xiaogan",
+  "lat": 30.924,
+  "lon": 113.916
+},
+{
+  "name": "Ningde",
+  "lat": 26.665,
+  "lon": 119.547
+},
+{
+  "name": "Ningbo",
+  "lat": 29.868,
+  "lon": 121.543
+},
+{
+  "name": "Anqing",
+  "lat": 30.543,
+  "lon": 117.063
+},
+{
+  "name": "Ankang",
+  "lat": 32.684,
+  "lon": 109.029
+},
+{
+  "name": "Anyang-si",
+  "lat": 37.394,
+  "lon": 126.956
+},
+{
+  "name": "Anshun",
+  "lat": 26.253,
+  "lon": 105.947
+},
+{
+  "name": "Dingxi",
+  "lat": 35.580,
+  "lon": 104.626
+},
+{
+  "name": "Yixing",
+  "lat": 31.340,
+  "lon": 119.823
+},
+{
+  "name": "Yibin",
+  "lat": 28.751,
+  "lon": 104.643
+},
+{
+  "name": "Yichang",
+  "lat": 30.691,
+  "lon": 111.286
+},
+{
+  "name": "Yichun",
+  "lat": 27.815,
+  "lon": 114.416
+},
+{
+  "name": "Baoji",
+  "lat": 34.363,
+  "lon": 107.237
+},
+{
+  "name": "Xuancheng",
+  "lat": 30.940,
+  "lon": 118.758
+},
+{
+  "name": "Suzhou",
+  "lat": 33.646,
+  "lon": 116.964
+},
+{
+  "name": "Suqian",
+  "lat": 33.963,
+  "lon": 118.275
+},
+{
+  "name": "Fuyang",
+  "lat": 30.048,
+  "lon": 119.960
+},
+{
+  "name": "Shouguang",
+  "lat": 36.855,
+  "lon": 118.790
+},
+{
+  "name": "Shannan",
+  "lat": 29.237,
+  "lon": 91.773
+},
+{
+  "name": "Yueyang",
+  "lat": 29.357,
+  "lon": 113.128
+},
+{
+  "name": "Chongzuo",
+  "lat": 22.376,
+  "lon": 107.364
+},
+{
+  "name": "Bazhong",
+  "lat": 31.867,
+  "lon": 106.747
+},
+{
+  "name": "Bayan Nur",
+  "lat": 40.743,
+  "lon": 107.387
+},
+{
+  "name": "Changzhou",
+  "lat": 31.811,
+  "lon": 119.974
+},
+{
+  "name": "Changde",
+  "lat": 29.031,
+  "lon": 111.698
+},
+{
+  "name": "Changshu",
+  "lat": 31.653,
+  "lon": 120.752
+},
+{
+  "name": "Pingliang",
+  "lat": 35.543,
+  "lon": 106.665
+},
+{
+  "name": "Pingdu",
+  "lat": 36.776,
+  "lon": 119.988
+},
+{
+  "name": "Pingdingshan",
+  "lat": 33.766,
+  "lon": 113.192
+},
+{
+  "name": "Guangyuan",
+  "lat": 32.435,
+  "lon": 105.843
+},
+{
+  "name": "Guang'an",
+  "lat": 30.455,
+  "lon": 106.633
+},
+{
+  "name": "Guangzhou",
+  "lat": 23.129,
+  "lon": 113.264
+},
+{
+  "name": "Qingyang",
+  "lat": 35.709,
+  "lon": 107.643
+},
+{
+  "name": "Ku'erle",
+  "lat": 41.725,
+  "lon": 86.174
+},
+{
+  "name": "Langfang",
+  "lat": 39.538,
+  "lon": 116.683
+},
+{
+  "name": "Yan'an",
+  "lat": 36.585,
+  "lon": 109.489
+},
+{
+  "name": "Yanbian",
+  "lat": 42.909,
+  "lon": 129.471
+},
+{
+  "name": "Kaifeng",
+  "lat": 34.797,
+  "lon": 114.307
+},
+{
+  "name": "Zhangjiakou",
+  "lat": 40.767,
+  "lon": 114.886
+},
+{
+  "name": "Zhangjiagang",
+  "lat": 31.875,
+  "lon": 120.555
+},
+{
+  "name": "Zhangjiajie",
+  "lat": 29.117,
+  "lon": 110.479
+},
+{
+  "name": "Zhangye",
+  "lat": 38.925,
+  "lon": 100.449
+},
+{
+  "name": "Xuzhou",
+  "lat": 34.205,
+  "lon": 117.284
+},
+{
+  "name": "Dehong",
+  "lat": 24.433,
+  "lon": 98.584
+},
+{
+  "name": "Dezhou",
+  "lat": 37.434,
+  "lon": 116.357
+},
+{
+  "name": "Deyang",
+  "lat": 31.126,
+  "lon": 104.397
+},
+{
+  "name": "Xinzhou",
+  "lat": 38.416,
+  "lon": 112.734
+},
+{
+  "name": "Huaihua",
+  "lat": 27.569,
+  "lon": 110.001
+},
+{
+  "name": "Nujiang",
+  "lat": 25.817,
+  "lon": 98.856
+},
+{
+  "name": "Simao",
+  "lat": 22.786,
+  "lon": 100.977
+},
+{
+  "name": "Enshi",
+  "lat": 30.272,
+  "lon": 109.488
+},
+{
+  "name": "Huizhou",
+  "lat": 23.111,
+  "lon": 114.416
+},
+{
+  "name": "Chengdu",
+  "lat": 30.572,
+  "lon": 104.066
+},
+{
+  "name": "Yangzhou",
+  "lat": 32.394,
+  "lon": 119.412
+},
+{
+  "name": "Chengde",
+  "lat": 40.952,
+  "lon": 117.962
+},
+{
+  "name": "Fuzhou",
+  "lat": 27.949,
+  "lon": 116.358
+},
+{
+  "name": "Fushun",
+  "lat": 41.880,
+  "lon": 123.957
+},
+{
+  "name": "Lhasa",
+  "lat": 29.652,
+  "lon": 91.172
+},
+{
+  "name": "Zhaoyuan",
+  "lat": 37.355,
+  "lon": 120.434
+},
+{
+  "name": "Jieyang",
+  "lat": 23.549,
+  "lon": 116.372
+},
+{
+  "name": "Panzhihua",
+  "lat": 26.582,
+  "lon": 101.718
+},
+{
+  "name": "Wenshan",
+  "lat": 23.400,
+  "lon": 104.216
+},
+{
+  "name": "Wendeng",
+  "lat": 37.193,
+  "lon": 122.057
+},
+{
+  "name": "Xinxiang",
+  "lat": 35.302,
+  "lon": 113.926
+},
+{
+  "name": "Xinyu",
+  "lat": 27.817,
+  "lon": 114.917
+},
+{
+  "name": "Wuxi",
+  "lat": 31.491,
+  "lon": 120.311
+},
+{
+  "name": "Rikaze",
+  "lat": 29.266,
+  "lon": 88.880
+},
+{
+  "name": "Rizhao",
+  "lat": 35.416,
+  "lon": 119.526
+},
+{
+  "name": "Kunshan",
+  "lat": 31.385,
+  "lon": 120.980
+},
+{
+  "name": "Kunming",
+  "lat": 24.880,
+  "lon": 102.832
+},
+{
+  "name": "Changji",
+  "lat": 44.011,
+  "lon": 87.308
+},
+{
+  "name": "Qamdo",
+  "lat": 31.140,
+  "lon": 97.172
+},
+{
+  "name": "Zhaotong",
+  "lat": 27.338,
+  "lon": 103.717
+},
+{
+  "name": "Jinzhong",
+  "lat": 37.687,
+  "lon": 112.752
+},
+{
+  "name": "Jincheng",
+  "lat": 35.490,
+  "lon": 112.851
+},
+{
+  "name": "Pu'er",
+  "lat": 22.825,
+  "lon": 100.966
+},
+{
+  "name": "Jingdezhen",
+  "lat": 29.268,
+  "lon": 117.178
+},
+{
+  "name": "Qujing",
+  "lat": 25.490,
+  "lon": 103.059
+},
+{
+  "name": "Shuozhou",
+  "lat": 39.331,
+  "lon": 112.432
+},
+{
+  "name": "Chaoyang",
+  "lat": 41.573,
+  "lon": 120.450
+},
+{
+  "name": "Benxi",
+  "lat": 41.486,
+  "lon": 123.685
+},
+{
+  "name": "Laibin",
+  "lat": 23.750,
+  "lon": 109.221
+},
+{
+  "name": "Hangzhou",
+  "lat": 30.274,
+  "lon": 120.155
+},
+{
+  "name": "Songyuan",
+  "lat": 45.141,
+  "lon": 124.825
+},
+{
+  "name": "Nyingchi",
+  "lat": 29.649,
+  "lon": 94.361
+},
+{
+  "name": "Golog",
+  "lat": 34.471,
+  "lon": 100.244
+},
+{
+  "name": "Zaozhuang",
+  "lat": 34.810,
+  "lon": 117.323
+},
+{
+  "name": "Liuzhou",
+  "lat": 24.325,
+  "lon": 109.415
+},
+{
+  "name": "Zhuzhou",
+  "lat": 27.827,
+  "lon": 113.134
+},
+{
+  "name": "Guilin",
+  "lat": 25.273,
+  "lon": 110.290
+},
+{
+  "name": "Meizhou",
+  "lat": 24.288,
+  "lon": 116.122
+},
+{
+  "name": "Wuzhou",
+  "lat": 23.476,
+  "lon": 111.279
+},
+{
+  "name": "Chuxiong",
+  "lat": 25.045,
+  "lon": 101.528
+},
+{
+  "name": "Yulin",
+  "lat": 38.285,
+  "lon": 109.734
+},
+{
+  "name": "Wuwei",
+  "lat": 37.928,
+  "lon": 102.638
+},
+{
+  "name": "Wuhan",
+  "lat": 30.593,
+  "lon": 114.305
+},
+{
+  "name": "Bijie",
+  "lat": 27.283,
+  "lon": 105.291
+},
+{
+  "name": "Yongzhou",
+  "lat": 26.420,
+  "lon": 111.613
+},
+{
+  "name": "Hanzhong",
+  "lat": 33.067,
+  "lon": 107.023
+},
+{
+  "name": "Shantou",
+  "lat": 23.354,
+  "lon": 116.681
+},
+{
+  "name": "Shanwei",
+  "lat": 22.786,
+  "lon": 115.375
+},
+{
+  "name": "Jiangmen",
+  "lat": 22.578,
+  "lon": 113.081
+},
+{
+  "name": "Jiangyin",
+  "lat": 31.920,
+  "lon": 120.284
+},
+{
+  "name": "Chizhou",
+  "lat": 30.664,
+  "lon": 117.491
+},
+{
+  "name": "Shenyang",
+  "lat": 41.805,
+  "lon": 123.431
+},
+{
+  "name": "Cangzhou",
+  "lat": 38.304,
+  "lon": 116.838
+},
+{
+  "name": "Hechi",
+  "lat": 24.692,
+  "lon": 108.085
+},
+{
+  "name": "Heyuan",
+  "lat": 23.743,
+  "lon": 114.700
+},
+{
+  "name": "Quanzhou",
+  "lat": 24.874,
+  "lon": 118.675
+},
+{
+  "name": "Tai'an",
+  "lat": 36.200,
+  "lon": 117.087
+},
+{
+  "name": "Taizhou",
+  "lat": 32.455,
+  "lon": 119.923
+},
+{
+  "name": "Luzhou",
+  "lat": 28.871,
+  "lon": 105.442
+},
+{
+  "name": "Luoyang",
+  "lat": 34.619,
+  "lon": 112.454
+},
+{
+  "name": "Jinan",
+  "lat": 36.651,
+  "lon": 117.120
+},
+{
+  "name": "Jining",
+  "lat": 35.414,
+  "lon": 116.587
+},
+{
+  "name": "Haidong",
+  "lat": 36.498,
+  "lon": 102.106
+},
+{
+  "name": "Haibei",
+  "lat": 36.954,
+  "lon": 100.900
+},
+{
+  "name": "Hainan",
+  "lat": 36.286,
+  "lon": 100.620
+},
+{
+  "name": "Haikou",
+  "lat": 20.044,
+  "lon": 110.198
+},
+{
+  "name": "Haixi",
+  "lat": 37.377,
+  "lon": 97.369
+},
+{
+  "name": "Haimen",
+  "lat": 31.871,
+  "lon": 121.181
+},
+{
+  "name": "Zibo",
+  "lat": 36.813,
+  "lon": 118.054
+},
+{
+  "name": "Huaibei",
+  "lat": 33.955,
+  "lon": 116.798
+},
+{
+  "name": "Huainan",
+  "lat": 32.625,
+  "lon": 116.999
+},
+{
+  "name": "Huai'an",
+  "lat": 33.610,
+  "lon": 119.015
+},
+{
+  "name": "Shenzhen",
+  "lat": 22.543,
+  "lon": 114.057
+},
+{
+  "name": "Qingyuan",
+  "lat": 23.681,
+  "lon": 113.056
+},
+{
+  "name": "Wenzhou",
+  "lat": 27.994,
+  "lon": 120.699
+},
+{
+  "name": "Weinan",
+  "lat": 34.499,
+  "lon": 109.509
+},
+{
+  "name": "Huzhou",
+  "lat": 30.894,
+  "lon": 120.086
+},
+{
+  "name": "Xiangtan",
+  "lat": 27.829,
+  "lon": 112.944
+},
+{
+  "name": "Xiangxi",
+  "lat": 28.311,
+  "lon": 109.739
+},
+{
+  "name": "Zhanjiang",
+  "lat": 21.270,
+  "lon": 110.359
+},
+{
+  "name": "Liyang",
+  "lat": 31.416,
+  "lon": 119.484
+},
+{
+  "name": "Chuzhou",
+  "lat": 32.253,
+  "lon": 118.328
+},
+{
+  "name": "Binzhou",
+  "lat": 37.381,
+  "lon": 117.970
+},
+{
+  "name": "Luohe",
+  "lat": 33.581,
+  "lon": 114.016
+},
+{
+  "name": "Zhangzhou",
+  "lat": 24.512,
+  "lon": 117.647
+},
+{
+  "name": "Weifang",
+  "lat": 36.706,
+  "lon": 119.161
+},
+{
+  "name": "Chaozhou",
+  "lat": 23.656,
+  "lon": 116.622
+},
+{
+  "name": "Puyang",
+  "lat": 35.761,
+  "lon": 115.029
+},
+{
+  "name": "Yantai",
+  "lat": 37.463,
+  "lon": 121.447
+},
+{
+  "name": "Jiaozuo",
+  "lat": 35.215,
+  "lon": 113.241
+},
+{
+  "name": "Mudanjiang",
+  "lat": 44.551,
+  "lon": 129.633
+},
+{
+  "name": "Yulin",
+  "lat": 22.636,
+  "lon": 110.164
+},
+{
+  "name": "Yushu",
+  "lat": 33.011,
+  "lon": 97.091
+},
+{
+  "name": "Yuxi",
+  "lat": 24.350,
+  "lon": 102.543
+},
+{
+  "name": "Zhuhai",
+  "lat": 22.270,
+  "lon": 113.576
+},
+{
+  "name": "Wafangdian",
+  "lat": 39.627,
+  "lon": 121.979
+},
+{
+  "name": "Gannan",
+  "lat": 34.983,
+  "lon": 102.911
+},
+{
+  "name": "Garze",
+  "lat": 30.049,
+  "lon": 101.962
+},
+{
+  "name": "Baicheng",
+  "lat": 45.619,
+  "lon": 122.838
+},
+{
+  "name": "Baishan",
+  "lat": 41.940,
+  "lon": 126.424
+},
+{
+  "name": "Baiyin",
+  "lat": 36.545,
+  "lon": 104.138
+},
+{
+  "name": "Bose",
+  "lat": 23.902,
+  "lon": 106.618
+},
+{
+  "name": "Yiyang",
+  "lat": 28.553,
+  "lon": 112.355
+},
+{
+  "name": "Yancheng",
+  "lat": 33.347,
+  "lon": 120.163
+},
+{
+  "name": "Panjin",
+  "lat": 41.119,
+  "lon": 122.070
+},
+{
+  "name": "Meishan",
+  "lat": 30.075,
+  "lon": 103.848
+},
+{
+  "name": "Shizuishan",
+  "lat": 38.983,
+  "lon": 106.383
+},
+{
+  "name": "Shijiazhuang",
+  "lat": 38.042,
+  "lon": 114.514
+},
+{
+  "name": "Shihezi",
+  "lat": 44.306,
+  "lon": 86.080
+},
+{
+  "name": "Fuzhou",
+  "lat": 26.074,
+  "lon": 119.296
+},
+{
+  "name": "Qinhuangdao",
+  "lat": 39.935,
+  "lon": 119.600
+},
+{
+  "name": "Zhangqiu",
+  "lat": 36.681,
+  "lon": 117.526
+},
+{
+  "name": "Honghe",
+  "lat": 23.363,
+  "lon": 103.374
+},
+{
+  "name": "Shaoxing",
+  "lat": 29.995,
+  "lon": 120.586
+},
+{
+  "name": "Suihua",
+  "lat": 46.653,
+  "lon": 126.968
+},
+{
+  "name": "Mianyang",
+  "lat": 31.467,
+  "lon": 104.679
+},
+{
+  "name": "Liaocheng",
+  "lat": 36.457,
+  "lon": 115.985
+},
+{
+  "name": "Zhaoqing",
+  "lat": 23.047,
+  "lon": 112.465
+},
+{
+  "name": "Jiaonan",
+  "lat": 35.862,
+  "lon": 119.907
+},
+{
+  "name": "Jiaozhou",
+  "lat": 36.264,
+  "lon": 120.033
+},
+{
+  "name": "Zigong",
+  "lat": 29.339,
+  "lon": 104.778
+},
+{
+  "name": "Zhoushan",
+  "lat": 29.985,
+  "lon": 122.207
+},
+{
+  "name": "Wuhu",
+  "lat": 31.352,
+  "lon": 118.432
+},
+{
+  "name": "Suzhou",
+  "lat": 31.298,
+  "lon": 120.585
+},
+{
+  "name": "Maoming",
+  "lat": 21.662,
+  "lon": 110.925
+},
+{
+  "name": "Jingzhou",
+  "lat": 30.335,
+  "lon": 112.239
+},
+{
+  "name": "Jingmen",
+  "lat": 31.035,
+  "lon": 112.199
+},
+{
+  "name": "Rongcheng",
+  "lat": 37.165,
+  "lon": 122.486
+},
+{
+  "name": "Putian",
+  "lat": 25.454,
+  "lon": 119.007
+},
+{
+  "name": "Laizhou",
+  "lat": 37.177,
+  "lon": 119.942
+},
+{
+  "name": "Laiwu",
+  "lat": 36.213,
+  "lon": 117.676
+},
+{
+  "name": "Laixi",
+  "lat": 36.889,
+  "lon": 120.517
+},
+{
+  "name": "Heze",
+  "lat": 35.233,
+  "lon": 115.480
+},
+{
+  "name": "Pingxiang",
+  "lat": 27.622,
+  "lon": 113.854
+},
+{
+  "name": "Yingkou",
+  "lat": 40.667,
+  "lon": 122.235
+},
+{
+  "name": "Huludao",
+  "lat": 40.711,
+  "lon": 120.836
+},
+{
+  "name": "Penglai",
+  "lat": 37.810,
+  "lon": 120.758
+},
+{
+  "name": "Bangbu",
+  "lat": 32.916,
+  "lon": 117.389
+},
+{
+  "name": "Hengshui",
+  "lat": 37.738,
+  "lon": 115.670
+},
+{
+  "name": "Hengyang",
+  "lat": 26.893,
+  "lon": 112.571
+},
+{
+  "name": "Quzhou",
+  "lat": 28.970,
+  "lon": 118.859
+},
+{
+  "name": "Xiangfan",
+  "lat": 32.023,
+  "lon": 112.155
+},
+{
+  "name": "Xiangyang",
+  "lat": 32.008,
+  "lon": 112.122
+},
+{
+  "name": "Xishuangbanna",
+  "lat": 22.008,
+  "lon": 100.797
+},
+{
+  "name": "Xining",
+  "lat": 36.617,
+  "lon": 101.778
+},
+{
+  "name": "Xi'an",
+  "lat": 34.341,
+  "lon": 108.940
+},
+{
+  "name": "Xuchang",
+  "lat": 34.035,
+  "lon": 113.852
+},
+{
+  "name": "Zhuji",
+  "lat": 29.708,
+  "lon": 120.246
+},
+{
+  "name": "Guigang",
+  "lat": 23.111,
+  "lon": 109.598
+},
+{
+  "name": "Guiyang",
+  "lat": 26.647,
+  "lon": 106.630
+},
+{
+  "name": "Hezhou",
+  "lat": 24.403,
+  "lon": 111.566
+},
+{
+  "name": "Ziyang",
+  "lat": 30.128,
+  "lon": 104.627
+},
+{
+  "name": "Ganzhou",
+  "lat": 25.831,
+  "lon": 114.935
+},
+{
+  "name": "Chifeng",
+  "lat": 42.257,
+  "lon": 118.886
+},
+{
+  "name": "Liaoyuan",
+  "lat": 42.887,
+  "lon": 125.143
+},
+{
+  "name": "Liaoyang",
+  "lat": 41.267,
+  "lon": 123.236
+},
+{
+  "name": "Dazhou",
+  "lat": 31.209,
+  "lon": 107.468
+},
+{
+  "name": "Yuncheng",
+  "lat": 35.026,
+  "lon": 111.007
+},
+{
+  "name": "Lianyungang",
+  "lat": 34.596,
+  "lon": 119.221
+},
+{
+  "name": "Deqen",
+  "lat": 27.818,
+  "lon": 99.702
+},
+{
+  "name": "Tonghua",
+  "lat": 41.728,
+  "lon": 125.939
+},
+{
+  "name": "Tongliao",
+  "lat": 43.652,
+  "lon": 122.243
+},
+{
+  "name": "Suining",
+  "lat": 30.532,
+  "lon": 105.592
+},
+{
+  "name": "Zunyi",
+  "lat": 27.725,
+  "lon": 106.927
+},
+{
+  "name": "Xingtai",
+  "lat": 37.070,
+  "lon": 114.504
+},
+{
+  "name": "Nagqu",
+  "lat": 31.476,
+  "lon": 92.051
+},
+{
+  "name": "Handan",
+  "lat": 36.625,
+  "lon": 114.538
+},
+{
+  "name": "Shaoyang",
+  "lat": 27.238,
+  "lon": 111.467
+},
+{
+  "name": "Zhengzhou",
+  "lat": 34.747,
+  "lon": 113.625
+},
+{
+  "name": "Chenzhou",
+  "lat": 25.770,
+  "lon": 113.014
+},
+{
+  "name": "Ordos",
+  "lat": 39.608,
+  "lon": 109.781
+},
+{
+  "name": "Ezhou",
+  "lat": 30.391,
+  "lon": 114.894
+},
+{
+  "name": "Jiuquan",
+  "lat": 39.732,
+  "lon": 98.494
+},
+{
+  "name": "Chongqing",
+  "lat": 29.563,
+  "lon": 106.551
+},
+{
+  "name": "Jinhua",
+  "lat": 29.079,
+  "lon": 119.647
+},
+{
+  "name": "Jintan",
+  "lat": 31.723,
+  "lon": 119.597
+},
+{
+  "name": "Jinchang",
+  "lat": 38.520,
+  "lon": 102.188
+},
+{
+  "name": "Qinzhou",
+  "lat": 21.979,
+  "lon": 108.654
+},
+{
+  "name": "Tieling",
+  "lat": 42.223,
+  "lon": 123.726
+},
+{
+  "name": "Tongren",
+  "lat": 27.717,
+  "lon": 109.194
+},
+{
+  "name": "Tongchuan",
+  "lat": 34.896,
+  "lon": 108.945
+},
+{
+  "name": "Tongling",
+  "lat": 30.945,
+  "lon": 117.811
+},
+{
+  "name": "Yinchuan",
+  "lat": 38.487,
+  "lon": 106.230
+},
+{
+  "name": "Xilin Gol",
+  "lat": 43.933,
+  "lon": 116.048
+},
+{
+  "name": "Jinzhou",
+  "lat": 41.095,
+  "lon": 121.126
+},
+{
+  "name": "Zhenjiang",
+  "lat": 32.187,
+  "lon": 119.425
+},
+{
+  "name": "Changchun",
+  "lat": 43.817,
+  "lon": 125.323
+},
+{
+  "name": "Changsha",
+  "lat": 28.228,
+  "lon": 112.938
+},
+{
+  "name": "Changzhi",
+  "lat": 36.195,
+  "lon": 113.116
+},
+{
+  "name": "Fuxin",
+  "lat": 42.021,
+  "lon": 121.670
+},
+{
+  "name": "Fuyang",
+  "lat": 32.890,
+  "lon": 115.814
+},
+{
+  "name": "Fangchenggang",
+  "lat": 21.686,
+  "lon": 108.353
+},
+{
+  "name": "Yangjiang",
+  "lat": 21.857,
+  "lon": 111.982
+},
+{
+  "name": "Yangquan",
+  "lat": 37.856,
+  "lon": 113.580
+},
+{
+  "name": "Aksu",
+  "lat": 41.168,
+  "lon": 80.260
+},
+{
+  "name": "Altay",
+  "lat": 47.844,
+  "lon": 88.141
+},
+{
+  "name": "Aba",
+  "lat": 31.899,
+  "lon": 102.224
+},
+{
+  "name": "Alxa",
+  "lat": 38.851,
+  "lon": 105.728
+},
+{
+  "name": "Ngari",
+  "lat": 32.501,
+  "lon": 80.105
+},
+{
+  "name": "Longnan",
+  "lat": 33.400,
+  "lon": 104.921
+},
+{
+  "name": "Suizhou",
+  "lat": 31.690,
+  "lon": 113.382
+},
+{
+  "name": "Ya'an",
+  "lat": 29.980,
+  "lon": 103.013
+},
+{
+  "name": "Qingdao",
+  "lat": 36.067,
+  "lon": 120.382
+},
+{
+  "name": "Anshan",
+  "lat": 41.108,
+  "lon": 122.994
+},
+{
+  "name": "Shaoguan",
+  "lat": 24.810,
+  "lon": 113.597
+},
+{
+  "name": "Ma'anshan",
+  "lat": 31.670,
+  "lon": 118.506
+},
+{
+  "name": "Zhumadian",
+  "lat": 33.011,
+  "lon": 114.022
+},
+{
+  "name": "Jixi",
+  "lat": 45.295,
+  "lon": 130.969
+},
+{
+  "name": "Hebi",
+  "lat": 35.747,
+  "lon": 114.297
+},
+{
+  "name": "Hegang",
+  "lat": 47.349,
+  "lon": 130.297
+},
+{
+  "name": "Yingtan",
+  "lat": 28.260,
+  "lon": 117.069
+},
+{
+  "name": "Huanggang",
+  "lat": 30.453,
+  "lon": 114.872
+},
+{
+  "name": "Huangnan",
+  "lat": 35.519,
+  "lon": 102.015
+},
+{
+  "name": "Huangshan",
+  "lat": 29.714,
+  "lon": 118.337
+},
+{
+  "name": "Huangshi",
+  "lat": 30.199,
+  "lon": 115.038
+},
+{
+  "name": "Heihe",
+  "lat": 50.245,
+  "lon": 127.528
+},
+{
+  "name": "Qiandongnan",
+  "lat": 26.583,
+  "lon": 107.982
+},
+{
+  "name": "Qiannan",
+  "lat": 26.254,
+  "lon": 107.522
+},
+{
+  "name": "Qianxinan",
+  "lat": 25.087,
+  "lon": 104.906
+},
+{
+  "name": "Qiqiha'er",
+  "lat": 47.354,
+  "lon": 123.918
+},
+{
+  "name": "Longyan",
+  "lat": 25.075,
+  "lon": 117.017
+}
+]
