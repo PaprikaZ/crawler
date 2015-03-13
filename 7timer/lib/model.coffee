@@ -2,6 +2,38 @@ mongoose = require('mongoose')
 config = require('./config.js')
 
 
+generateRecordSchema = (PredictionSchema) ->
+  return new mongoose.Schema({
+    query_date: {
+      type: Date
+      required: true
+    }
+    geo_name: {
+      type: String
+      required: true
+      trim: true
+    }
+    geo_lat: {
+      type: Number
+      required: true
+    }
+    geo_lon: {
+      type: Number
+      required: true
+    }
+    product_type: {
+      type: String
+      required: true
+      trim: true
+    }
+    report_timepoint: {
+      type: Date
+      required: true
+    }
+    prediction: [ PredictionSchema ]
+  })
+
+
 CivilPredictionSchema = new mongoose.Schema({
   time_point: {
     type: Number
@@ -80,23 +112,7 @@ CivilPredictionSchema = new mongoose.Schema({
   }
 })
 
-CivilRecordSchema = new mongoose.Schema({
-  query_date: {
-    type: Date
-    required: true
-  }
-  product_type: {
-    type: String
-    required: true
-    trim: true
-  }
-  report_timepoint: {
-    type: Date
-    required: true
-  }
-  prediction: [ CivilPredictionSchema ]
-})
-
+CivilRecordSchema = generateRecordSchema(CivilPredictionSchema)
 
 TwoWeekOverviewPredictionSchema = new mongoose.Schema({
   time_point: {
@@ -153,39 +169,25 @@ TwoWeekOverviewPredictionSchema = new mongoose.Schema({
   }
 })
 
-TwoWeekOverviewRecordSchema = new mongoose.Schema({
-  query_date: {
-    type: Date
-    required: true
-  }
-  report_date: {
-    type: Date
-    required: true
-  }
-  product_type: {
-    type: String
-    required: true
-  }
-  prediction: [ TwoWeekOverviewPredictionSchema ]
-})
+TwoWeekOverviewRecordSchema = generateRecordSchema(TwoWeekOverviewPredictionSchema)
 
 [
-{
-  name: 'CivilPrediction'
-  schema: CivilPredictionSchema
-}
-{
-  name: 'CivilRecord'
-  schema: CivilRecordSchema
-}
-{
-  name: 'TwoWeekOverviewPrediction'
-  schema: TwoWeekOverviewPredictionSchema
-}
-{
-  name: 'TwoWeekOverviewRecord'
-  schema: TwoWeekOverviewRecordSchema
-}
+  {
+    name: 'CivilPrediction'
+    schema: CivilPredictionSchema
+  }
+  {
+    name: 'CivilRecord'
+    schema: CivilRecordSchema
+  }
+  {
+    name: 'TwoWeekOverviewPrediction'
+    schema: TwoWeekOverviewPredictionSchema
+  }
+  {
+    name: 'TwoWeekOverviewRecord'
+    schema: TwoWeekOverviewRecordSchema
+  }
 ].forEach((elt) ->
   (mongoose.modelNames().indexOf(elt.name) == -1) and mongoose.model(elt.name, elt.schema))
 
@@ -193,7 +195,7 @@ TwoWeekOverviewRecordSchema = new mongoose.Schema({
 CivilPrediction = mongoose.model('CivilPrediction')
 CivilRecord = mongoose.model('CivilRecord')
 
-createCivilRecord = (json) ->
+createCivilRecord = (location, json) ->
   now = new Date()
   prediction = json.dataseries.map((prec) ->
     new CivilPrediction({
@@ -212,6 +214,9 @@ createCivilRecord = (json) ->
 
   new CivilRecord({
     query_date: now.toUTCString()
+    geo_name: location.name
+    geo_lat: location.lat
+    geo_lon: location.lon
     product_type: json.product
     report_timepoint: new Date(
       parseInt(json.init.slice(0, 4)),
@@ -229,7 +234,7 @@ createCivilRecord = (json) ->
 TwoWeekOverviewPrediction = mongoose.model('TwoWeekOverviewPrediction')
 TwoWeekOverviewRecord = mongoose.model('TwoWeekOverviewRecord')
 
-createTwoWeekOverviewRecord = (json) ->
+createTwoWeekOverviewRecord = (location, json) ->
   now = new Date()
   prediction = json.dataseries.map((prec) ->
     time_point: prec.timepoint
@@ -245,6 +250,9 @@ createTwoWeekOverviewRecord = (json) ->
 
   new TwoWeekOverviewRecord({
     quert_date: now.toUTCString()
+    geo_name: location.name
+    geo_lat: location.lat
+    geo_lon: location.lon
     product_type: json.product
     report_timepoint: new Date(
       parseInt(json.init.slice(0, 4))

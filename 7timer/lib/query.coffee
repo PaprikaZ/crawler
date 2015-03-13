@@ -2,18 +2,19 @@ request = require('request')
 config = require('./config.js')
 model = require('./model.js')
 
-pollTimer = null
-timers = [pollTimer]
+timers = []
 
-params = (->
-  return [
+
+generateQueryUrl = (lat, lon) ->
+  params = [
+    'lat=' + config.lat
+    'lon=' + config.lon
     'lang=' + config.queryLang,
     'unit=' + config.queryUnit,
     'output=' + config.queryOutput,
     'tzshift=' + config.queryTzshift,
   ].join('&')
-)()
-pollUrl = config.domain + config.queryUri + config.queryType + params
+  return config.domain + config.queryUri + config.queryType + params
 
 requestErrorHandler = (err, cb) ->
   logger.error('caught request error: %s', err.message)
@@ -32,33 +33,45 @@ returnErrorHandler = (json, cb) ->
   cb()
   return
 
-writeRecord = (json, cb) ->
-  logger.debug(json)
-  model.createCivilRecord(json)
-  cb()
+writeRecord = (location, json) ->
+  model.createCivilRecord(location, json)
   return
 
 exports.startPoll = ->
   poll = ->
-    request.get({
-      url: pollUrl
-      json: true
-      encoding: 'utf8'
-      timeout: config.requestTimeout
-    }, (err, res, json) ->
-      if err
-        requestErrorHandler(err, retry)
-      else if res.statusCode != 200
-        abnormalResponseHandler(res, retry)
+    cnt = 0
+    total = config.locations.length
+
+    sendReq = (locations) ->
+      cnt += 1
+      logger.info('request %s/%s', cnt, total)
+      if locations.length != 0
+        location = locations.shift()
+        retry = -> setTimeout((-> sendReq([location])), config.retryDelay)
+        request.get({
+          url: generateQueryUrl(location.lat, location.lon)
+          json: true
+          encoding: 'utf8'
+          timeout: config.requestTimeout
+        }, (err, res, json) ->
+          if err
+            requestErrorHandler(err, retry)
+          else if res.statusCode != 200
+            abnormalResponseHandler(res, retry)
+          else
+            writeRecord(location, json)
+          return
+        )
+        setTimeout((-> sendReq(locations)), config.requestInterval)
       else
-        writeRecord(json, pendingNextPoll)
+        logger.info('all request done')
       return
-    )
+
+    sendReq(config.locations.slice())
     return
-  retry = -> setTimeout((-> poll()), config.retryDelay)
-  pendingNextPoll = -> setTimeout((-> poll()), config.pollInterval)
 
   poll()
+  timers.push(setInterval(poll, config.pollInterval))
   return
 
 exports.clearTimers = -> timers.forEach((t) -> t and clearInterval(t))

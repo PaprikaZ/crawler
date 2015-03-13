@@ -20,12 +20,12 @@ logger.add(logger.transports.File, {
 })
 global.logger = logger
 
-config.queryUrl = config.domain + config.queryUri
-
 [
   "pollInterval"
   "retryDelay"
   "requestTimeout"
 ].forEach((field) -> config[field] = config[field] * 1000)
+
+config.locations = JSON.parse(fs.readFileSync(path.join(appRoot, config.queryLocationFile), 'utf8'))
 
 module.exports = exports = config

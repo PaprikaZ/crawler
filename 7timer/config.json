@@ -9,6 +9,10 @@
   "queryTzshift": "0",
   "queryAltitudeCorrection": "0",
 
+  "queryLocationFile": "<location-json-file>",
+
+  "requestInterval": 50,
+
   "pollInterval": 1800,
   "retryDelay": 120,
   "requestTimeout": 10,
@@ -17,7 +21,7 @@
   "logFile": "7timer.log",
   "logLevel": "info",
 
-  "mongoUrl": "mongodb://localhost:27017/<your-db-name>",
+  "mongoUrl": "mongodb://localhost:27017/<collection-name>",
   "mongoConnectionOptions": {
     "server": {
       "pollSize": 2,
